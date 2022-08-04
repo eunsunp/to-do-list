@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <p>
+            <label for="new-task">Add Item</label>
+            <input type="text" id="new-task">
+            <button class="add"><i class="fas fa-plus"></i></button>
+        </p>
+
+        <h3>Todo</h3>
+        <ul id="incomplete-tasks">
+            <li>
+                <input type="checkbox">
+                <label>Pay bills</label>
+                <input type="text">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </li>
+            <li class="editMode">
+                <input type="checkbox">
+                <label>Go shopping</label>
+                <input type="text" value="Go Shopping">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </li>
+        </ul>
+
+        <h3>Completed</h3>
+        <ul id="completed-tasks">
+            <li>
+                <input type="checkbox" checked="">
+                <label>See the Doctor</label>
+                <input type="text">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./assets/app.js"></script>
+</body>
+</html>
